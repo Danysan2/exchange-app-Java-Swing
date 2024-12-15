@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.conversor.DesignApp">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="12" y="149" width="715" height="467"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="563f9" binding="panel2" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14933200"/>
+          <foreground color="-4521755"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="efad5" class="javax.swing.JLabel" binding="Lbl_MensajeBienvenida">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2104859"/>
+              <enabled value="true"/>
+              <font size="26"/>
+              <foreground color="-196614"/>
+              <text value="Seleccione la moneda que quiere cambiar"/>
+            </properties>
+          </component>
+          <grid id="799b4" binding="panel_info" layout-manager="GridLayoutManager" row-count="12" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14933200"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="8bc5d" class="javax.swing.JComboBox" binding="divisaOrigen">
+                <constraints>
+                  <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-526593"/>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <foreground color="-1760212"/>
+                  <model>
+                    <item value="Dolares"/>
+                    <item value="Euros"/>
+                    <item value="Pesos colombianos"/>
+                    <item value="Libras esterlinas"/>
+                  </model>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="9eead" class="javax.swing.JTextField" binding="userInformation">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="ef92e" class="javax.swing.JComboBox" binding="divisaDetino">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-526593"/>
+                  <foreground color="-1760212"/>
+                  <model>
+                    <item value="Dolares"/>
+                    <item value="Euros"/>
+                    <item value="Pesos colombianos"/>
+                    <item value="Libras esterlinas"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="b009b" class="javax.swing.JLabel" binding="monedaConvertida">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-196614"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="ad023" class="javax.swing.JButton" binding="btn_enviar">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Convertir"/>
+                </properties>
+              </component>
+              <component id="29924" class="javax.swing.JLabel" binding="Lbl_second">
+                <constraints>
+                  <grid row="5" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Bell MT" size="24"/>
+                  <foreground color="-196614"/>
+                  <text value="Moneda a pasar"/>
+                </properties>
+              </component>
+              <component id="94fd5" class="javax.swing.JLabel" binding="Lbl_monedaActual">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-526593"/>
+                  <enabled value="true"/>
+                  <font name="Bell MT" size="24"/>
+                  <foreground color="-196614"/>
+                  <text value="Moneda actual"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
